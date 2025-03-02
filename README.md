@@ -1,54 +1,82 @@
-# React + TypeScript + Vite
+# Pokédex App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Pokédex App** is a modern and responsive Pokémon browser built with **React, TypeScript, Tailwind CSS, and React Query**. It allows users to explore Pokémon data with infinite scrolling, view detailed stats, add favorites, and navigate smoothly through an intuitive interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔄 **Infinite Scrolling**: Seamless browsing of Pokémon data.
+- ⭐ **Favorites System**: Mark your favorite Pokémon.
+- 📊 **Detailed Pokémon Pages**: View types, stats, and abilities.
+- ⚡ **Optimized Data Fetching**: Uses React Query for efficient API calls.
+- 📱 **Responsive Design**: Works across all devices.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** - Frontend framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **React Query** - Data fetching and caching
+- **React Router** - Navigation
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📸 Screenshots
+
+![Pokedex App](src/assets/pokedex-screenshot.png)
+
+## 🔧 Installation & Setup
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/pokedex-app.git
+   cd pokedex-app
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+4. **Open in the browser:**
+   Visit `http://localhost:5173` (if using Vite) or the provided local URL.
+
+## 📂 Project Structure
+![Pokedex App](./src/assets/pokedex-image.png)  # Si está en src/assets
+```
+/pokedex-app
+│── src/
+│   ├── assets/        # Static assets (images, icons)
+│   ├── components/    # Reusable UI components
+│   ├── pages/         # Main pages (Home, Favorites, Details)
+│   ├── hooks/         # Custom hooks
+│   ├── services/      # API calls and data fetching
+│   ├── App.tsx        # Main application component
+│── public/            # Static files
+│── package.json       # Dependencies and scripts
+│── README.md          # Project documentation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Build & Deploy
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+To build the project for production:
+```sh
+npm run build
 ```
+
+For deployment, you can use **Vercel, Netlify, or GitHub Pages**.
+
+## 🤝 Contributing
+
+Feel free to fork this project, submit issues, or open pull requests! 🚀
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+⭐ **Enjoy catching them all with this Pokédex App!** 🏆
+
