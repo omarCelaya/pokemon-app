@@ -20,7 +20,7 @@ The **Pokédex App** is a modern and responsive Pokémon browser built with **Re
 
 ## 📸 Screenshots
 
-![Pokedex App](src/assets/pokedex-screenshot.png)
+![Pokedex App](./src/assets/pokemon-app.jpg)  # Si está en src/assets
 
 ## 🔧 Installation & Setup
 
@@ -44,11 +44,17 @@ The **Pokédex App** is a modern and responsive Pokémon browser built with **Re
    Visit `http://localhost:5173` (if using Vite) or the provided local URL.
 
 ## 📂 Project Structure
-![Pokedex App](./src/assets/pokemon-app.jpg)  # Si está en src/assets
 ```
 /pokedex-app
 │── src/
-│   ├── assets/        # Static assets (images, icons)
+│   ├── actions/           # Data fetching with React Query
+│   │    ├── pokemons/
+│   │       ├── get-pokemon-by-id.ts
+│   │       ├── get-pokemons-by-ids.ts
+│   │       ├── get-pokemons-names-with-id.ts
+│   │       ├── get-pokemons-names-with-id.ts
+│   │       └── index.ts
+├── assets/      # Static assets (images, icons)
 │   ├── components/    # Reusable UI components
 │   ├── pages/         # Main pages (Home, Favorites, Details)
 │   ├── hooks/         # Custom hooks
