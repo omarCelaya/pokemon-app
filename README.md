@@ -44,7 +44,7 @@ The **Pokédex App** is a modern and responsive Pokémon browser built with **Re
    Visit `http://localhost:5173` (if using Vite) or the provided local URL.
 
 ## 📂 Project Structure
-![Pokedex App](./src/assets/pokedex-image.png)  # Si está en src/assets
+![Pokedex App](./src/assets/pokemon-app.jpg)  # Si está en src/assets
 ```
 /pokedex-app
 │── src/
